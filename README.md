@@ -1,7 +1,7 @@
 # Experiments
 ## 1
 
-###Config
+### Config
 >{ 
     model: bart-base,
     dataset: cnn,
@@ -10,14 +10,14 @@
     input: arange_input
 }
 
-###Metrics
+### Metrics
 >metrics: {
     rouge1: 26.976, 
     rouge2: 10.8858, 
     rougeL: 20.4431
 }
 
-###Some examples of summaries
+### Some examples of summaries
 
 >Generated
 > >James Best, 88, died Monday.
@@ -41,9 +41,9 @@ The robot was sent into the plant after the first one broke down.
 > >"No challenge poses more of a public threat than climate change," the President says.
 He credits the Clean Air Act with making Americans "a lot" healthier.
 
-##2
+## 2
 
-###Config
+### Config
 >{ 
     model: bart-base,
     dataset: cnn,
@@ -52,14 +52,14 @@ He credits the Clean Air Act with making Americans "a lot" healthier.
     input: arange_input
 }
 
-###Metrics
+### Metrics
 >metrics: {
     'rouge1': 23.1791, 
     'rouge2': 9.1714, 
     'rougeL': 17.3658
 }
 
-###Some examples of summaries
+### Some examples of summaries
 
 >Generated
 > >Actor Jimmy Best was best known for his "hot pursuit"
@@ -83,9 +83,9 @@ The robot was sent into the plant after the first one broke down.
 > >"No challenge poses more of a public threat than climate change," the President says.
 He credits the Clean Air Act with making Americans "a lot" healthier.
 
-##3
+## 3
 
-###Config
+### Config
 >{ 
     model: bart-large,
     dataset: cnn,
@@ -94,14 +94,14 @@ He credits the Clean Air Act with making Americans "a lot" healthier.
     input: arange_input
 }
 
-###Metrics
+### Metrics
 >metrics: {
     'rouge1': 36.7568, 
     'rouge2': 15.6933, 
     'rougeL': 25.9815
 }
 
-###Some examples of summaries
+### Some examples of summaries
 
 >Generated
 > >James Best, 88, died Monday after a brief illness.
@@ -131,9 +131,9 @@ The pair wed at Besi Prison on Nusakambangan Island on Monday.
 Chan proposed to Febyanti in February while he was still at Kerobokan.
 He and Myuran Sukumaran are set to be executed on Wednesday morning.
 
-##4
+## 4
 
-###Config
+### Config
 >{ 
     model: bart-large with extra tanh and linear,
     dataset: cnn,
@@ -142,14 +142,14 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
     input: arange_input
 }
 
-###Metrics
+### Metrics
 >metrics: {
     'rouge1': 36.2712, 
     'rouge2': 15.4233, 
     'rougeL': 25.6864
 }
 
-###Some examples of summaries
+### Some examples of summaries
 
 >Generated
 > >James Best, 88, died Monday after a brief illness.
@@ -178,9 +178,9 @@ The pair wed at Besi Prison on Nusakambangan Island on Monday.
 Chan proposed to Febyanti in February while he was still at Kerobokan.
 He and Myuran Sukumaran are set to be executed on Wednesday morning.
 
-##5
+## 5
 
-###Config
+### Config
 >{ 
     model: bart-large,
     dataset: cnn,
@@ -189,14 +189,14 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
     input: random_input
 }
 
-###Metrics
+### Metrics
 >metrics: {
     'rouge1': 37.0196, 
     'rouge2': 16.0939, 
     'rougeL': 26.2081
 }
 
-###Some examples of summaries
+### Some examples of summaries
 
 >Generated
 > >James Best died in hospice in Hickory, North Carolina, of complications from pneumonia.
@@ -227,9 +227,9 @@ The pair wed at Besi Prison on Nusakambangan Island on Monday.
 Chan proposed to Febyanti in February while he was still at Kerobokan.
 He and Myuran Sukumaran are set to be executed on Wednesday morning.
 
-##6
+## 6
 
-###Config
+### Config
 >{ 
     model: bart-large,
     dataset: cnn,
@@ -238,14 +238,14 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
     input: random_input
 }
 
-###Metrics
+### Metrics
 >metrics: {
     'rouge1': 37.4084, 
     'rouge2': 16.3604, 
     'rougeL': 26.5555
 }
 
-###Some examples of summaries
+### Some examples of summaries
 
 >Generated
 > >James Best, 88, died Monday after a brief illness.
@@ -276,9 +276,9 @@ The pair wed at Besi Prison on Nusakambangan Island on Monday.
 Chan proposed to Febyanti in February while he was still at Kerobokan.
 He and Myuran Sukumaran are set to be executed on Wednesday morning.
 
-##7
+## 7
 
-###Config
+### Config
 >{ 
     model: bart-large,
     dataset: xsum,
@@ -287,14 +287,14 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
     input: random_input
 }
 
-###Metrics
+### Metrics
 >metrics: {
     'rouge1': 36.7893, 
     'rouge2': 15.2479, 
     'rougeL': 29.7982
 }
 
-###Some examples of summaries
+### Some examples of summaries
 
 >Generated
 > >A new community hospital in Somerset is to be built.
