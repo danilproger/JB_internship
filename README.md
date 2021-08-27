@@ -1,6 +1,4 @@
-
-
-# Experiments
+# Experiments with BART model with a prefix-tuning
 ## 1
 
 ### Config
@@ -54,9 +52,9 @@ He credits the Clean Air Act with making Americans "a lot" healthier.
 ```
 ### Metrics
 ```python
-    'rouge1': 23.1791, 
-    'rouge2': 9.1714, 
-    'rougeL': 17.3658,
+    rouge1: 23.1791, 
+    rouge2: 9.1714, 
+    rougeL: 17.3658,
 ```
 
 ### Some examples of summaries
@@ -95,9 +93,9 @@ He credits the Clean Air Act with making Americans "a lot" healthier.
 ```
 ### Metrics
 ```python
-    'rouge1': 36.7568, 
-    'rouge2': 15.6933, 
-    'rougeL': 25.9815,
+    rouge1: 36.7568, 
+    rouge2: 15.6933, 
+    rougeL: 25.9815,
 ```
 
 ### Some examples of summaries
@@ -142,9 +140,9 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 ```
 ### Metrics
 ```python
-    'rouge1': 36.2712, 
-    'rouge2': 15.4233, 
-    'rougeL': 25.6864,
+    rouge1: 36.2712, 
+    rouge2: 15.4233, 
+    rougeL: 25.6864,
 ```
 
 ### Some examples of summaries
@@ -188,9 +186,9 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 ```
 ### Metrics
 ```python
-    'rouge1': 37.0196, 
-    'rouge2': 16.0939, 
-    'rougeL': 26.2081,
+    rouge1: 37.0196, 
+    rouge2: 16.0939, 
+    rougeL: 26.2081,
 ```
 
 ### Some examples of summaries
@@ -236,9 +234,9 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 ```
 ### Metrics
 ```python
-    'rouge1': 37.4084, 
-    'rouge2': 16.3604, 
-    'rougeL': 26.5555,
+    rouge1: 37.4084, 
+    rouge2: 16.3604, 
+    rougeL: 26.5555,
 ```
 
 ### Some examples of summaries
@@ -284,9 +282,9 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 ```
 ### Metrics
 ```python
-    'rouge1': 36.7893, 
-    'rouge2': 15.2479, 
-    'rougeL': 29.7982,
+    rouge1: 36.7893, 
+    rouge2: 15.2479, 
+    rougeL: 29.7982,
 ```
 
 ### Some examples of summaries
@@ -309,7 +307,7 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 >Label
 > >A former worker at the Byron hamburger chain, who was arrested and deported after immigration raids last month, says he feels "used".
 
-## Result table
+# Results table
 
 | exp |  rouge1 |  rouge2 |  rougeL |
 |:---:|:-------:|:-------:|:-------:|
@@ -338,3 +336,9 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 | rouge1 | rouge2 | rougeL |
 |:------:|:------:|:------:|
 |  42.92 |  20.03 |  35.05 |
+
+
+# Papers
+* [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension](https://arxiv.org/abs/1910.13461/)
+* [Prefix-Tuning: Optimizing Continuous Prompts for Generation](https://arxiv.org/abs/2101.00190)
+
