@@ -1,21 +1,22 @@
+
+
 # Experiments
 ## 1
 
 ### Config
->{ 
+```python
     model: bart-base,
     dataset: cnn,
     dataset_part_for_training: full,
     epochs_num: 10,
-    input: arange_input
-}
-
+    input: arange_input,
+```
 ### Metrics
->metrics: {
-    rouge1: 26.976, 
+```python
+    rouge1: 26.9760, 
     rouge2: 10.8858, 
-    rougeL: 20.4431
-}
+    rougeL: 20.4431,
+```
 
 ### Some examples of summaries
 
@@ -44,20 +45,19 @@ He credits the Clean Air Act with making Americans "a lot" healthier.
 ## 2
 
 ### Config
->{ 
+```python 
     model: bart-base,
     dataset: cnn,
     dataset_part_for_training: 1/100,
     epochs_num: 10,
-    input: arange_input
-}
-
+    input: arange_input,
+```
 ### Metrics
->metrics: {
+```python
     'rouge1': 23.1791, 
     'rouge2': 9.1714, 
-    'rougeL': 17.3658
-}
+    'rougeL': 17.3658,
+```
 
 ### Some examples of summaries
 
@@ -86,20 +86,19 @@ He credits the Clean Air Act with making Americans "a lot" healthier.
 ## 3
 
 ### Config
->{ 
+```python 
     model: bart-large,
     dataset: cnn,
     dataset_part_for_training: 1/100,
     epochs_num: 10,
-    input: arange_input
-}
-
+    input: arange_input,
+```
 ### Metrics
->metrics: {
+```python
     'rouge1': 36.7568, 
     'rouge2': 15.6933, 
-    'rougeL': 25.9815
-}
+    'rougeL': 25.9815,
+```
 
 ### Some examples of summaries
 
@@ -134,20 +133,19 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 ## 4
 
 ### Config
->{ 
+``` 
     model: bart-large with extra tanh and linear,
     dataset: cnn,
     dataset_part_for_training: 1/100,
     epochs_num: 10,
-    input: arange_input
-}
-
+    input: arange_input,
+```
 ### Metrics
->metrics: {
+```python
     'rouge1': 36.2712, 
     'rouge2': 15.4233, 
-    'rougeL': 25.6864
-}
+    'rougeL': 25.6864,
+```
 
 ### Some examples of summaries
 
@@ -181,20 +179,19 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 ## 5
 
 ### Config
->{ 
+```python 
     model: bart-large,
     dataset: cnn,
     dataset_part_for_training: 1/100,
     epochs_num: 10,
-    input: random_input
-}
-
+    input: random_input,
+```
 ### Metrics
->metrics: {
+```python
     'rouge1': 37.0196, 
     'rouge2': 16.0939, 
-    'rougeL': 26.2081
-}
+    'rougeL': 26.2081,
+```
 
 ### Some examples of summaries
 
@@ -230,20 +227,19 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 ## 6
 
 ### Config
->{ 
+```python
     model: bart-large,
     dataset: cnn,
     dataset_part_for_training: 1/50,
     epochs_num: 7,
-    input: random_input
-}
-
+    input: random_input,
+```
 ### Metrics
->metrics: {
+```python
     'rouge1': 37.4084, 
     'rouge2': 16.3604, 
-    'rougeL': 26.5555
-}
+    'rougeL': 26.5555,
+```
 
 ### Some examples of summaries
 
@@ -279,20 +275,19 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 ## 7
 
 ### Config
->{ 
+```python
     model: bart-large,
     dataset: xsum,
     dataset_part_for_training: 1/100,
     epochs_num: 10,
-    input: random_input
-}
-
+    input: random_input,
+```
 ### Metrics
->metrics: {
+```python
     'rouge1': 36.7893, 
     'rouge2': 15.2479, 
-    'rougeL': 29.7982
-}
+    'rougeL': 29.7982,
+```
 
 ### Some examples of summaries
 
@@ -313,3 +308,33 @@ He and Myuran Sukumaran are set to be executed on Wednesday morning.
 > 
 >Label
 > >A former worker at the Byron hamburger chain, who was arrested and deported after immigration raids last month, says he feels "used".
+
+## Result table
+
+| exp |  rouge1 |  rouge2 |  rougeL |
+|:---:|:-------:|:-------:|:-------:|
+|  1  | 26.9760 | 10.8858 | 20.4431 |
+|  2  | 23.1791 |  9.1714 | 17.3658 |
+|  3  | 36.7568 | 15.6933 | 25.9815 |
+|  4  | 36.2712 | 15.4233 | 25.6864 |
+|  5  | 37.0196 | 16.0939 | 26.2081 |
+|  6  | **37.4084** | **16.3604** | **26.5555** |
+|  7  | 36.7893 | 15.2479 | 29.7982 |
+
+## From BART paper
+
+### CNN/DailyMail
+| rouge1 | rouge2 | rougeL |
+|:------:|:------:|:------:|
+|  44.16 |  21.28 |  40.90 |
+### XSUM
+| rouge1 | rouge2 | rougeL |
+|:------:|:------:|:------:|
+|  45.14 |  22.27 |  37.25 |
+
+## From Prefix-Tuning paper
+
+### XSUM
+| rouge1 | rouge2 | rougeL |
+|:------:|:------:|:------:|
+|  42.92 |  20.03 |  35.05 |
